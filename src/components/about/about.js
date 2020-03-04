@@ -17,32 +17,9 @@ export default function About(props) {
   return (
     <div ref={about} className="mainAbout">
       <div className="header">
-<<<<<<< HEAD
         <div className="title one">Why Boom.Camp?</div>
         <div className="title-text one" >
         The idea of Boom.Camp was born out of the struggle of it's parent company <a href="https://boomsourcing.com/">Boomsourcing</a> to find developers with the needed skills co-located with the facilities Boomsourcing already had available in the Philippines. The company leadership at Boomsourcing knows there's a vast amount of talent in the Philippines, but still found it difficult to find people with the specialized skills they were looking for. With the success of various boot-camp style development training programs in the U.S.A Boomsourcing felt they could develop their own unique program that could bring talented I.T. and computer science graduates up to speed with the skills needed by the development team at Boomsourcing. In addition to bringing developers onto the internal teams at Boomsourcing, the company also would like to be able to provide workforce augmentation and custom development services to clients. That's basically why Boom.Camp has come to exist today.
-=======
-        <div className="title one">Why Boom Camp?</div>
-        <div className="title-text one">
-          The idea of Boom.Camp was born out of the struggle of it's parent
-          company{" "}
-          <a target="_blank" href="https://boomsourcing.com/">
-            Boomsourcing
-          </a>{" "}
-          to find developers with the needed skills co-located with the
-          facilities Boomsourcing already had available in the Philippines. The
-          company leadership at Boomsourcing knows there's a vast amount of
-          talent in the Philippines, but still found it difficult to find people
-          with the specialized skills they were looking for. With the success of
-          various boot-camp style development training programs in the U.S.A
-          Boomsourcing felt they could develop their own unique program that
-          could bring talented I.T. and computer science graduates up to speed
-          with the skills needed by the development team at Boomsourcing. In
-          addition to bringing developers onto the internal teams at
-          Boomsourcing, the company also would like to be able to provide
-          workforce augmentation and custom development services to clients.
-          That's basically why Boom.Camp has come to exist today.
->>>>>>> 2b64ae06870d62c034152b3b3724ca5d01423a99
         </div>
         <Divider style={{ marginBottom: 15, width: "50%", margin: "0 auto" }} />
         <div className="title two" style={{ marginTop: 12 }}>
