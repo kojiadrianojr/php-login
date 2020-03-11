@@ -5,7 +5,7 @@
 
 .mainDivFooter {
   height: 320px;
-  background-color: mintcream;
+  background-color: #fdfbfb;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -15,7 +15,7 @@
   height: 270px;
   overflow: hidden;
   border-radius: 20% 20% 0px 0px;
-  background-color: #f1def3;
+  background-color: #d1cbfb;
 }
 
 .footerTop {
@@ -36,7 +36,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 0.5px ridge #ccc;
+  border-top: 0.5px ridge #9999;
 }
 .footerBottom a,
 .footerBottom a:hover {
@@ -72,20 +72,20 @@
 }
 
 .footImg {
-  width: 90%;
-  height: 80%;
+  width: 80%;
+  height: 65%;
   cursor: pointer;
   transition: width 0.2s linear;
 }
 
 .footImg:hover {
   transition: width 0.2s linear;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 85%;
 }
 
 .mapAnchor {
-  color: #777;
+  color: #555;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -22,7 +22,20 @@ export default function Home(props) {
       <span ref={head}></span>
       <div className="mainDiv" ref={home}>
         <div className="mainInner">
-          <div className="innerTop">
+          <div className="mainTitle">
+            <span>PHP COURSE</span>
+          </div>
+          <div className="subTitle">
+            <span>
+              You can access the course by logging in your &nbsp;
+              <i>@boom.camp</i>
+              &nbsp; google accout
+            </span>
+          </div>
+          <div className="mainBtn">
+            <button className="btnStarted slide">Get Started</button>
+          </div>
+          {/* <div className="innerTop">
             <span className="innerTitle">PHP Course</span>
             <img src={Php} className="innerGif" />
           </div>
@@ -37,7 +50,7 @@ export default function Home(props) {
             <div className="innerBtnDiv">
               <button className="innerBtn">Get Started</button>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="mainImg"></div>
       </div>

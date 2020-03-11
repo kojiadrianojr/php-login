@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap");
 
 .mainDiv {
   padding-top: 80px;
   height: 1000px;
   width: 100%;
-  /* background-color: #f1f1f1; */
   position: relative;
   display: flex;
   justify-content: center;
@@ -14,39 +13,113 @@
 .mainImg {
   width: 100%;
   height: 100%;
-  background-image: url("./images/bg.svg");
+  background: linear-gradient(rgba(78, 30, 97, 0.45), rgba(78, 30, 97, 0.45)),
+    url("https://images.unsplash.com/photo-1529465230221-a0d10e46fcbb?");
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   background-position: center;
   position: fixed;
   z-index: -3;
-  filter: blur(2px);
+  filter: blur(4px);
 }
 
 .mainInner {
-  width: 80%;
+  /* width: 80%;
   height: 600px;
   z-index: 1;
   position: absolute;
   border-radius: 10px;
+
+  background-color: rgba(0, 165, 255, 0.2); */
   /* background-color: red; */
-  background-color: rgba(0, 165, 255, 0.2);
+  width: 50%;
+  height: 400px;
 }
 
-.innerTop {
+/* .mainInner > div {
+  height: 33.3%;
+  background-color: yellow;
+} */
+
+.mainTitle {
+  height: 40%;
+  /* background-color: orange; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainTitle span {
+  font-size: 60px;
+  letter-spacing: 22px;
+  font-weight: bold;
+  font-family: Montserrat;
+  transform: scaleY(1.4);
+  color: #fff;
+}
+
+.subTitle {
+  height: 20%;
+  /* background-color: brown; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subTitle span {
+  color: #fff;
+  letter-spacing: 3px;
+  transform: scaleY(1.2);
+}
+
+.mainBtn {
+  height: 40%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnStarted {
+  width: 400px;
+  height: 60px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  font-size: 25px;
+  color: #fff;
+  background-color: transparent;
+  letter-spacing: 5px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+/* 
+.btnStarted:hover {
+  background-color: #9c27b0;
+  color: #fff;
+  border: none;
+} */
+
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 30em 0 0 0 #9c27b0;
+  border: none;
+}
+
+/* .innerTop {
   height: 50%;
-  /* background-color: #ccc; */
+
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .innerTitle {
-  font-size: 7vw;
-  font-family: Acme;
-  letter-spacing: 5px;
-  color: #3f0d40;
+  font-size: 5vw;
+  font-family: "Montserrat", serif;
+  letter-spacing: 2px;
+  color: #4e1e61;
   font-weight: bold;
-  text-shadow: 1px 3px 4px #999;
+
 }
 
 .innerGif {
@@ -54,60 +127,61 @@
 }
 
 .innerBorder {
-  width: 80%;
-  height: 3%;
+  width: 70%;
+  height: 1%;
   border-radius: 10px;
   margin: auto;
-  background-color: #a13aa3;
+  background-color: #8e24aa;
 }
 
 .innerBottom {
-  /* background-color: red; */
+
   height: 47%;
 }
 
 .innerSign {
   height: 50%;
-  /* background-color: orange; */
+
   display: flex;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 1.3px;
-  text-shadow: 1px 2px 3px #666;
   justify-content: center;
   align-items: center;
   word-spacing: 1px;
   text-align: center;
+  color: #333;
+  font-family: "Roboto slab";
 }
 
 .innerBtnDiv {
   height: 50%;
-  /* background-color: red; */
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .innerBtn {
-  width: 320px;
+  width: 420px;
   height: 60px;
-  border-radius: 10px;
+  border-radius: 30px;
   border: none;
   cursor: pointer;
-  background-color: #a744a8;
+  background-color: #9c27b0;
   color: #f1f1f1;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   letter-spacing: 2px;
-  text-shadow: 1px 2px 3px #999;
   box-shadow: 1px 2px 3px #a838aa;
   border: 1px solid #ca48cc;
 }
 
 .innerBtn:hover {
   transition: 0.7s;
-  background-color: #d459d6;
-}
+  background-color: #6d306d;
+  border: none;
+} */
 
 /* Responsiveness -------------------------- */
 

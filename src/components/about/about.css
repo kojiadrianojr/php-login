@@ -4,7 +4,7 @@
   overflow: hidden;
   padding-bottom: 150px;
   z-index: 1;
-  background-color: #fff;
+  background-color: #fdfbfb;
 }
 .mainAbout:after {
   display: block;
@@ -15,7 +15,7 @@
   bottom: 0;
   left: 0;
   width: 490px;
-  background-color: #c6eaff;
+  background-color: #d0e9f7;
   transform: skew(-50deg);
   transform-origin: top;
 }
@@ -29,7 +29,7 @@
   left: 145%;
   right: 0%;
   width: 700px;
-  background-color: #c6eaff;
+  background-color: #d0e9f7;
   transform: skew(-50deg);
   transform-origin: top;
 }
@@ -60,17 +60,18 @@
 }
 .title {
   text-align: center;
-  font-size: 30px;
-  font-family: Acme;
+  font-size: 25px;
+  font-family: Montserrat;
   color: #3f0d40;
-  text-shadow: 1px 2px 3px #999;
 }
 .title-text {
   text-align: center;
   padding: 20px;
-  font-size: 15px;
-  letter-spacing: 2px;
-  line-height: 1.9;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  word-spacing: 5px;
+  line-height: 2.3;
+  font-family: "Roboto slab";
 }
 
 .one {

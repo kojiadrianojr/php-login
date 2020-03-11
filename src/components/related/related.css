@@ -1,7 +1,7 @@
 .mainRelated {
   height: 1300px;
   width: 100%;
-  background-color: mintcream;
+  background-color: #fdfbfb;
   z-index: 1;
   /* background-color: red; */
 }
@@ -13,13 +13,13 @@
   height: 20%;
   text-transform: uppercase;
   word-spacing: 10px;
-  font-size: 35px;
+  font-size: 30px;
   color: #3f0d40;
   display: flex;
   justify-content: center;
+  letter-spacing: 1.4px;
   align-items: center;
-  font-family: Acme;
-  text-shadow: 1px 2px 3px #999;
+  font-family: Montserrat;
   transform: scaleY(1.3);
 }
 .relatedTitle::before {
@@ -68,7 +68,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 1px 10px 6px #999;
+  box-shadow: 3px 8px 5px #999;
   border-radius: 10px;
 }
 
@@ -98,7 +98,7 @@
   bottom: 100%;
   left: 0;
   right: 0;
-  opacity: 0.93;
+  opacity: 0.95;
   overflow: hidden;
   transition: 0.5s ease;
   background-color: #c8c4f4;
@@ -113,35 +113,37 @@
   font-size: 20px;
   border: none;
   box-shadow: 1px 1px 2px #6b186d;
-  background-color: #3f0d40;
+  background-color: #9c27b0;
   padding: 10px 35px;
   color: #fff;
   margin-top: 10px;
-  border-radius: 20px;
+  border-radius: 30px;
   cursor: pointer;
   text-shadow: 1px 1px 2px #999;
 }
 
-.overlayBtn:hover {
-  background-color: #831d85;
+.overlayBtn:hover,
+.overlayBtn:active {
+  background-color: #6d306d;
   box-shadow: 1px 1px 2px #741a75;
-  color: #f1f1f1;
+  outline: none;
+
+  /* color: #333; */
 }
 
 .overlayTxt {
-  font-size: 30px;
-  font-family: Acme;
+  font-size: 25px;
+  font-family: Montserrat;
   font-weight: bold;
   letter-spacing: 1.5px;
   word-spacing: 5px;
-  text-shadow: 1px 1px 2px #999;
 }
 
 .relatedBottom {
   height: 63%;
   width: 100%;
   /* background-color: red; */
-  background-color: mintcream;
+  /* background-color: mintcream; */
   padding: 10px 0;
   display: flex;
 }
@@ -199,9 +201,10 @@
   display: flex;
   align-items: center;
   transition: 1s ease;
-  font-size: 30px;
+  font-size: 25px;
   color: #333;
-  text-shadow: 1px 2px 3px #666;
+  font-family: Montserrat;
+  /* text-shadow: 1px 2px 3px #666; */
   font-weight: bold;
 }
 
@@ -221,14 +224,14 @@
   overflow: hidden;
   height: 80%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 17px;
-  letter-spacing: 2px;
+  font-size: 16px;
+  letter-spacing: 2.5px;
   word-spacing: 5px;
   text-align: right;
   border-right: 10px solid #c8c4f4;
   position: relative;
+  font-family: "Roboto slab";
 }
 
 .descBottom-span {
@@ -237,7 +240,6 @@
   left: 100%;
   right: 0;
   height: 350px;
-  /* background-color: red; */
   transition: 0.8s ease;
   position: absolute;
   padding: 0 15px;
@@ -248,20 +250,21 @@
 }
 
 .activeBottom {
-  width: 100%;
-  left: 0;
+  width: 90%;
+  left: 10%;
 }
 
 .mainCarousel {
   height: 100%;
-  /* padding: 10px 0; */
   width: 100%;
   /* background-color: red; */
+  padding-top: 50px;
 }
 
 .galleryDiv {
   width: 65vw;
   height: auto;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -271,8 +274,8 @@
 }
 
 .galleryItem {
-  width: 60%;
-  height: 460px;
+  width: 35%;
+  height: 350px;
   border-radius: 5px;
   box-shadow: 2px 4px 6px #888;
   /* z-index: 20; */
@@ -282,7 +285,7 @@
 .galleryTxt {
   position: absolute;
   bottom: 17px;
-  font-size: 1.6em;
+  font-size: 0.9vw;
   font-weight: bold;
   letter-spacing: 1.2px;
   word-spacing: 2px;
@@ -321,15 +324,17 @@
   align-items: center;
   border-radius: 50%;
   padding: 10px;
-  background-color: #ccc7f4;
-  box-shadow: 1px 1px 2px #777;
+  background-color: #9c27b0;
+  color: #fff;
+  border: 1px solid #beb9df;
+  /* box-shadow: 1px 1px 2px #777; */
 }
 
 .carouselBtn:hover,
 .carouselBtn:focus {
-  border: none;
+  /* border: none; */
   outline: none;
-  background-color: #9187e0;
+  background-color: #6d306d;
   color: #fff;
   transition: 0.5s ease;
 }
@@ -343,7 +348,7 @@
   }
 
   .galleryTxt {
-    font-size: 15px;
+    font-size: 12px;
   }
   .relBottom-right {
     height: 90%;
@@ -475,6 +480,10 @@
   .carouselNav {
     width: 97%;
   }
+
+  .galleryTxt {
+    bottom: 35px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -512,8 +521,15 @@
   .relatedBottom {
     height: 80%;
   }
+
+  .galleryItem {
+    width: 50%;
+    height: 260px;
+  }
+
   .galleryTxt {
-    font-size: 2vw;
+    bottom: 50px;
+    font-size: 1.2vw;
   }
 }
 

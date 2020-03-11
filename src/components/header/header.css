@@ -7,7 +7,7 @@
   height: 80px;
   width: 100%;
   background-color: #fff;
-  box-shadow: 2px 2px 40px #999;
+  box-shadow: 2px 2px 10px #999;
   position: fixed;
   z-index: 10;
 }
@@ -24,6 +24,7 @@
 }
 
 .leftHeader {
+  font-family: Acme !important;
   width: 60%;
   height: 80px;
   /* background-color: red; */
@@ -31,9 +32,9 @@
   align-items: center;
   font-size: 40px;
   font-weight: bold;
-  font-family: Acme;
+
   color: #3f0d40;
-  text-shadow: 1px 2px 3px #ccc;
+  /* text-shadow: 1px 2px 3px #ccc; */
 }
 
 .leftSpan {
@@ -74,14 +75,16 @@
 
 .rightHeader span {
   cursor: pointer;
-  font-size: 16px;
+  font-size: 15px;
   height: 35px;
-  text-shadow: 0.5px 0.5px 1px #666;
+  font-weight: bold;
+  font-family: Montserrat;
+  /* text-shadow: 0.5px 0.5px 1px #666; */
 }
 
 .rightHeader span > a {
   text-decoration: none;
-  color: #333;
+  color: #444;
 }
 
 .rightHeader span > a:before {

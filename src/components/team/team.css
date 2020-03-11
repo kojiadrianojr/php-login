@@ -1,9 +1,8 @@
 .mainTeam {
   height: 1100px;
-  background-color: mintcream;
+  background-color: #fdfbfb;
   position: relative;
 }
-
 .teamInner {
   height: 100%;
   width: 100%;
@@ -23,27 +22,26 @@
 
 .teamTop {
   padding: 0 0.35em;
-  font-weight: bold;
   line-height: 1.4;
   height: 25%;
   text-transform: uppercase;
   word-spacing: 10px;
-  font-size: 35px;
+  font-size: 30px;
   color: #3f0d40;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Acme;
-  text-shadow: 1px 2px 3px #999;
+  font-family: Montserrat;
   transform: scaleY(1.3);
+  font-weight: bold;
 }
 .teamTop::before {
   content: "";
   position: absolute;
   z-index: -1;
   width: 55%;
-  height: 20%;
-  bottom: 85px;
+  height: 15%;
+  bottom: 95px;
   opacity: 0.3;
   border-radius: 0px 20px 0px 20px;
   background: #6265fe;
@@ -127,6 +125,11 @@
   margin-top: 30px;
   z-index: 1000;
   transition: color 0.3s ease-out;
+}
+
+.card:hover span {
+  z-index: 1000;
+  color: #fff;
 }
 
 .sm .circle {
@@ -271,12 +274,11 @@
 }
 
 .bottomName {
-  font-size: 25px;
-  font-family: Acme;
+  font-size: 22px;
+  font-family: Montserrat;
   font-weight: bold;
-  color: #333;
+  color: #3f0e40;
   letter-spacing: 1.2px;
-  text-shadow: 1px 2px 3px #999;
   transform: scaleY(1.2);
 }
 
@@ -298,10 +300,9 @@
 }
 
 .carouselItem {
-  background-color: #d9d9d9;
-  box-shadow: 2px 3px 4px #777;
-  height: 150px;
-  width: 180px;
+  background-color: transparent;
+  height: 130px;
+  width: 160px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -309,8 +310,16 @@
 }
 
 .carouselImg {
-  width: 80%;
-  height: 50%;
+  width: 95%;
+  height: 95%;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.carouselImg:hover {
+  width: 100%;
+  height: 100%;
 }
 
 /* Animations ----------------------------- */

@@ -4,7 +4,6 @@ import Logo from "./images/logo-boom.png";
 import { Collapse, List } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 
-const { Panel } = Collapse;
 export default function Header(props) {
   const [height, setHeight] = useState(false);
 

@@ -30,18 +30,18 @@ const teams = [
 ];
 
 const skills = [
-  "https://quintagroup.com/cms/js/js-image/react.js-logo.png/@@images/a9bf22bd-373a-4fae-a900-c22fd12c87c7.png",
+  "https://pngimage.net/wp-content/uploads/2018/06/react-logo-png-3.png",
   "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png",
   "https://pngimg.com/uploads/php/php_PNG12.png",
   "https://quintagroup.com/cms/js/js-image/javascript-logo.png/@@images/8c64c4b9-4e1c-4c26-9b5e-78d85e3130a9.png",
   "https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png",
   "https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/JQuery-Logo.svg/1280px-JQuery-Logo.svg.png"
+  "https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png",
+  "https://cdn.iconscout.com/icon/free/png-256/jquery-10-1175155.png",
+  "https://i.pinimg.com/originals/43/4d/cf/434dcfe1acd79af48ddfc35292c31de5.png"
 ];
 
 const Gallery = () => {
-  // const handleOnDragStart = e => e.preventDefault();
   return (
     <AliceCarousel
       buttonsDisabled
@@ -51,6 +51,7 @@ const Gallery = () => {
       autoPlayInterval={1500}
       infinite
       responsive={{
+        1500: { items: 6 },
         1159: { items: 5 },
         1000: { items: 4 },
         700: { items: 3 },
@@ -69,6 +70,7 @@ const Gallery = () => {
 export default function Team(props) {
   const team = useRef(null);
   const [select, setSelect] = useState("");
+  const [clicked, setClicked] = useState(false);
 
   const scrollNow = () => {
     team.current.scrollIntoView({ behavior: "smooth" });
@@ -78,45 +80,53 @@ export default function Team(props) {
     if (props.props === "#team") {
       scrollNow();
     }
+    console.log(clicked);
   });
+
+  const handleClick = e => {
+    setSelect(e);
+    setClicked(true);
+  };
+
   return (
-    <div ref={team} className="mainTeam">
-      <div className="teamInner">
-        <div className="teamTop">
-          Meet the instructors and mentors of this course
-        </div>
-        <div className="teamBody">
-          {teams.map(item => (
-            <div
-              key={item.key}
-              onClick={() => setSelect(item.name)}
-              className={
-                item.key === 0 || item.key === 2
-                  ? "card sm teams"
-                  : "card lg teams"
-              }
-            >
-              <div className="overlay"></div>
-              <div className="circle">
-                <img className="cardImg" src={item.img} />
-              </div>
-              <span className="teamName">{item.name}</span>
-              <span className="teamRole">{item.role}</span>
-            </div>
-          ))}
-        </div>
-        <div
-          className="teamBottom"
-          style={{ display: select === "" ? "none" : "block" }}
-        >
-          <div className="teamBottom-title">
-            <span className="bottomName">{select}</span>
-            <i className="bottomTxt">"Primary technologies & skills"</i>
+    <React.Fragment>
+      <div ref={team} className="mainTeam">
+        <div className="teamInner">
+          <div className="teamTop">
+            Meet the instructors and mentors of this course
           </div>
-          <div className="teamBottom-carousel">{<Gallery />}</div>
+          <div className="teamBody">
+            {teams.map(item => (
+              <a
+                key={item.key}
+                onClick={() => handleClick(item.name)}
+                className={
+                  item.key === 0 || item.key === 2
+                    ? "card sm teams"
+                    : "card lg teams"
+                }
+              >
+                <div className="overlay"></div>
+                <div className="circle">
+                  <img className="cardImg" src={item.img} />
+                </div>
+                <span className="teamName">{item.name}</span>
+                <span className="teamRole">{item.role}</span>
+              </a>
+            ))}
+          </div>
+          <div
+            className="teamBottom"
+            style={{ display: select === "" ? "none" : "block" }}
+          >
+            <div className="teamBottom-title">
+              <span className="bottomName">{select}</span>
+              <i className="bottomTxt">"Primary technologies & skills"</i>
+            </div>
+            <div className="teamBottom-carousel">{<Gallery />}</div>
+          </div>
         </div>
       </div>
-      {/* <div className="mainTeam-img"></div> */}
-    </div>
+    </React.Fragment>
   );
 }
