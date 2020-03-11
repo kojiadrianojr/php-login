@@ -1,12 +1,10 @@
 .mainAbout {
-  height: auto;
-  position: relative;
-  overflow: hidden;
+  height: 800px;
   padding-bottom: 150px;
   z-index: 1;
   background-color: #fdfbfb;
 }
-.mainAbout:after {
+/* .mainAbout:after {
   display: block;
   z-index: -11;
   content: "";
@@ -158,4 +156,4 @@
   .body-img img {
     width: 300px;
   }
-}
+} */
